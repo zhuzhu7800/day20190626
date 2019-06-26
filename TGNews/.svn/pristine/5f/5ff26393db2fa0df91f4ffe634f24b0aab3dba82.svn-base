@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.SchoolDao">
+	
+	<select id="getAll" resultMap="school">
+		SELECT s.`id`,s.`school_name`,d.`valueName`,s.`school_section` FROM `ein_school` s,`ein_dictionary` d WHERE s.`school_type_id`=d.`id` 
+	</select>
+	
+	<resultMap type="cn.bdqn.pojo.School" id="school">
+		<id property="id" column="id"/>
+		<result property="school_name" column="school_name"/>
+		<result property="school_type_id" column="school_type_id"/>
+		<result property="school_section" column="school_section"/>
+		<result property="pic" column="pic"/>
+		<result property="createdBy" column="createdBy"/>
+		<result property="creationTime" column="creationTime"/>
+		<result property="modifyBy" column="modifyBy"/>
+		<result property="modifyDate" column="modifyDate"/>
+		<collection property="dictionary" javaType="cn.bdqn.pojo.Dictionary">
+			<id property="id" column="id"/>
+			<result property="typeCode" column="typeCode"/>
+			<result property="typeName" column="typeName"/>
+			<result property="valueId" column="valueId"/>
+			<result property="valueName" column="valueName"/>
+		</collection>
+	</resultMap>
+	
+	<select id="getById" resultMap="school">
+		SELECT s.`id`,s.`school_name`,d.`valueName`,s.`school_section` FROM `ein_school` s,`ein_dictionary` d WHERE s.`school_type_id`=d.`id`
+				<if test="valueId != 0">
+					AND d.`valueId`=#{valueId}
+				</if>
+	</select>
+	
+	<!-- <delete id="del">
+		DELETE FROM ein_school WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.School">
+		INSERT INTO ein_school VALUES(null,#{school_name},#{school_type_id},#{school_section},null,1,null,null,null)
+	</insert>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.School">
+		update ein_school
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="school_name != null">school_name=#{school_name},</if>
+			<if test="school_section != null">school_section=#{school_section},</if>
+		</trim>
+	</update>  -->
+	
+</mapper>

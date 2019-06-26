@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.NewssDao">
+	<select id="getAll" resultMap="columns">
+		SELECT e.*,(SELECT `categoryName` FROM ein_column WHERE id = e.`parentId`) AS cname FROM ein_column c,ein_columns e WHERE c.`id`=e.`column` AND e.`column`=#{id}
+	</select>
+	
+	<resultMap type="cn.bdqn.pojo.Columns" id="columns">
+		<id property="id" column="id"/>
+		<result property="title" column="title"/>
+		<result property="createDate" column="createDate"/>
+		<result property="parentId" column="parentId"/>
+		<result property="author" column="author"/>
+		<result property="column" column="column"/>
+		<result property="updBy" column="updBy"/>
+		<result property="updDate" column="updDate"/>
+		<result property="content" column="content"/>
+		<result property="cname" column="cname"/>	
+	</resultMap>
+	
+	<select id="getMh" resultMap="columns">
+		SELECT e.*,(SELECT `categoryName` FROM ein_column WHERE id = e.`parentId`) AS cname FROM ein_column c,ein_columns e WHERE c.`id`=e.`column` AND e.`column`=#{column}
+				<if test="parentId != 0">
+					AND e.`parentId`=#{parentId}
+				</if>
+			
+	</select>
+	 
+	<delete id="del">
+		DELETE FROM `ein_columns` WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.Columns">
+		INSERT INTO `ein_columns` VALUES(NULL,#{title},#{createDate},13,#{author},#{column},NULL,NULL,NULL)
+	</insert>
+	
+	<select id="getById" resultMap="columns">
+		select * from `ein_columns`
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Columns">
+		update `ein_columns`
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="title != null">title=#{title},</if>
+			<if test="createDate != null">createDate=#{createDate},</if>
+			<if test="author != null">author=#{author},</if>
+		</trim>
+	</update> 
+</mapper>

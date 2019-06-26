@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.SchoolDao">
+	
+	<select id="getAll" resultType="cn.bdqn.pojo.School">
+		SELECT * FROM ein_school,ein_column WHERE ein_school.`school_type_id`=ein_column.`id` 
+	</select>
+	<delete id="del">
+		DELETE FROM ein_school WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.School">
+		INSERT INTO ein_school VALUES(null,#{school_name},#{school_type_id},#{school_section},null,1,null,null,null)
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.School">
+		select * from ein_school
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.School">
+		update ein_school
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="school_name != null">school_name=#{school_name},</if>
+			<if test="school_section != null">school_section=#{school_section},</if>
+		</trim>
+	</update> 
+	
+</mapper>

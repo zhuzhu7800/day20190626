@@ -1,0 +1,47 @@
+package cn.bdqn.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/tiao")
+public class TiaoController {
+	@RequestMapping("/hdjl")
+	public String HDJL() {
+		return "houjsp/hdjl";
+	}
+	
+	@RequestMapping("/tsjy")
+	public String TSJY() {
+		return "houjsp/tsjy";
+	}
+	
+	@RequestMapping("/index")
+	public String index() {
+		return "houjsp/index";
+	}
+	@RequestMapping("/jxyj")
+	public String JXYJ() {
+		return "houjsp/jxyj";
+	}
+	@RequestMapping("/xxzl")
+	public String XXZL() {
+		return "houjsp/xxzl";
+	}
+	@RequestMapping("/xxgk")
+	public String XXGK() {
+		return "houjsp/xxgk";
+	}
+	@RequestMapping("/jgsz")
+	public String JGSZ() {
+		return "houjsp/jgsz";
+	}
+	@RequestMapping("/ztlm")
+	public String ZTLM() {
+		return "houjsp/ztlm";
+	}
+	@RequestMapping("/ztlm2")
+	public String ZTLM2() {
+		return "houjsp/ztlm2";
+	}
+}

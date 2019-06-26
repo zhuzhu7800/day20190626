@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.ColumnwDao">
+	<select id="getAll" resultType="cn.bdqn.pojo.Column">
+		select * from ein_column where parentId=4
+	</select>
+	<delete id="del">
+		DELETE FROM ein_column WHERE id = #{id}
+	</delete>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Column">
+		update ein_column set categoryName=#{categoryName} where id=#{id}
+	</update> 
+	
+	<select id="selById" resultType="cn.bdqn.pojo.Column">
+		SELECT * FROM ein_column WHERE parentId=4 AND id=#{id}
+	</select>
+	
+	<insert id="add">
+		insert into ein_column values(null,#{categoryName},4,#{createdBy},#{creationTime},#{modifyBy},#{modifyDate})
+	</insert>
+</mapper>

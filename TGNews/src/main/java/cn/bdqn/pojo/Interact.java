@@ -1,0 +1,77 @@
+package cn.bdqn.pojo;
+
+import java.io.Serializable;
+
+public class Interact  implements Serializable{
+	private Integer id;
+	private String name;
+	private String contact;
+	private String time;
+	private String theme;
+	private String content;
+	private String deptname;
+	private String reply;
+	private String type;
+	private String Ttime;
+	public String getTtime() {
+		return Ttime;
+	}
+	public void setTtime(String ttime) {
+		Ttime = ttime;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getContact() {
+		return contact;
+	}
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public String getTheme() {
+		return theme;
+	}
+	public void setTheme(String theme) {
+		this.theme = theme;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getDeptname() {
+		return deptname;
+	}
+	public void setDeptname(String deptname) {
+		this.deptname = deptname;
+	}
+	public String getReply() {
+		return reply;
+	}
+	public void setReply(String reply) {
+		this.reply = reply;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+		
+}

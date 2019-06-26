@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>太谷教育信息网-教育资源</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+
+<body>
+<!--------Header s-------->
+<div id="header"> 
+  <!----Header_top s---->
+  <div class="header_top">
+    <div class="header_top_content">
+      <div class="top_nav">
+        <p><a href="#">行政办公系统</a></p>
+        <p><a href="#">人事管理系统</a></p>
+        <p><a href="#">学籍管理系统</a></p>
+        <p><a href="#">电子图书馆</a></p>
+        <p><a href="#">网络教研平台</a></p>
+        <p><a href="#">录播管理平台</a></p>
+      </div>
+      <div class="header_top_r"> <a href="#" class="login">登录</a><a href="#">网站地图</a> </div>
+    </div>
+  </div>
+  <!----Header_top e----> 
+  <!----Header_c s---->
+  <div class="header_c"> <a class="logo" href="http://www.sxtgedu.net"></a>
+    <div id="search">
+      <div class="searct_l">
+        <div id="choose" class="search_choose">教育新闻</div>
+        <ul class="search_select">
+          <li>教育新闻</li>
+          <li>教学研究</li>
+          <li>教育资源</li>
+        </ul>
+        <input class="search_txt" type="text" value=""  autocomplete="off" placeholder="搜我搜我!">
+      </div>
+      <div class="search_r">
+        <button class="search_btn" type="submit" >搜索</button>
+      </div>
+    </div>
+  </div>
+  <!----Header_c e----> 
+  <!----Header_menu s---->
+  <div class="header_menu">
+    <ul id="nav" class="nav clearfix">
+      <li class="nLi">
+        <h3><a href="index.html" target="_blank">首页</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="news.html" target="_blank">教育新闻</a></h3>
+        <ul class="sub">
+          <li><a href="news.html">教育动态</a></li>
+          <li><a href="news.html">教育新闻</a></li>
+          <li><a href="news.html">热点关注</a></li>
+        </ul>
+      </li>
+      <li class="nLi"> 
+        <!-- 假设当前频道为“预告片”，手动或后台程序添加titOnClassName类名（默认是'on'），相当于设置参数defaultIndex:1。若同时设置参数returnDefault:true，则鼠标移走后0.3秒返回当前频道 -->
+        <h3><a href="jxyj.html" target="_blank">教学研究</a></h3>
+        <ul class="sub">
+          <li><a href="jxyj.html">教育教学</a></li>
+          <li><a href="jxyj.html">信息技术</a></li>
+          <li><a href="jxyj.html">精选题库</a></li>
+        </ul>
+      </li>
+      <li class="nLi on">
+        <h3><a href="jyzy.html" target="_blank">教育资源</a></h3>
+         
+      </li>
+      <li class="nLi">
+        <h3><a href="http://wljy.jzedu.net/" target="_blank">网络教研</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="school.html" target="_blank">学校专栏</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="xxgk.html" target="_blank">信息公开</a></h3>
+        <ul class="sub">
+          <li><a href="xxgk.html">通知公告</a></li>
+          <li><a href="xxgk_gs.html">股市动态</a></li>
+          <li><a href="bszn.html">办事指南</a></li>
+        </ul>
+      </li>
+      <li class="nLi">
+        <h3><a href="hudong.html" target="_blank">互动交流</a></h3>
+        <ul class="sub">
+          <li><a href="hudong2.html">互动交流</a></li>
+          <li><a href="hudong2.html">调查征集</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!----Header_menu e----> 
+</div>
+<!--------Header e-------->
+
+<!--banner S-->
+<div id="banner"></div>
+<!--banner E-->
+<div class="cl"></div>
+
+<!--列表页内容 S-->
+<div id="list_edu">
+    <!--列表 S-->
+    <div class="current">当前位置 ： 
+        	<a href="jyzy.html">个人中心</a>>
+        	<span>我已上传的资源</span>
+    </div>
+    <div class="list_edu">
+        <div class="edu_l edu2_l">
+            <div class="edu_tab" id="edu_tab3">
+            	<div class="edu_hd">
+                	<p>我已上传的资源</p>
+                </div>
+                <div class="edu_bd">
+                    <div class="edu2_bd edu2_bd2">
+                    	<div class="add_news">
+                        <span class="tc_span02">分类检索：</span>
+                        <select class="select01">
+                        	<option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                          <a href="#">上传教学研究</a>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_pdf"></i>
+                            		<a href="jyzy_article.html">表格信息的加工与表达.pdf</a>
+                                </div>
+                                 <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="bh_span">审核驳回</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_swf"></i>
+                            		<a href="jyzy_article.html">表格信息的加工与表达.swf</a>
+                                </div>
+                                 <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_mp3"></i>
+                            		<a href="jyzy_article.html">新北师大版四年级数学上册《商不变的规律》.mp3</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="bh_span">审核驳回</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_mp4"></i>
+                            		<a href="jyzy_article.html">数学《平移和旋转》.mp4</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_img"></i>
+                            		<a href="jyzy_article.html">表格信息的加工与表达.img</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="bh_span">审核驳回</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_rar"></i>
+                            		<a href="jyzy_article.html">新北师大版四年级数学上册《商不变的规律》.rar</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_doc"></i>
+                            		<a href="jyzy_article.html">数学《平移和旋转》.doc</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_doc"></i>
+                            		<a href="jyzy_article.html">表格信息的加工与表达.doc</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_excel"></i>
+                            		<a href="jyzy_article.html">表格信息的加工与表达.doc</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-30</span>
+                                <span class="sh_span">审核中</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+                        </div>
+                        <div class="edu_list_bd">
+                        	<div class="edu_list_l">
+                            	<div>
+                                	<i class="icon_ppt"></i>
+                            		<a href="jyzy_article.html">商不变的规律.ppt</a>
+                                </div>
+                                <span class="tg_span">上传人：张老师</span>
+                                <span class="tg_span">上传时间：2015-12-29</span>
+                                <span class="tg_span">已有<label>100</label>人阅读</span>
+                            </div>
+                            <p class="edu_list_r">已有<span>100</span>人阅读</p>
+                            <div class="edu_list_edit">
+                              <a href="#" class="t_editor">编辑</a>
+                              <a href="#" class="t_delete">删除</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="page">
+                <a href="#">首页</a>
+                <a href="#">上一页</a>
+                <span class="page_hover">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <i>...</i>
+                <a href="#">98</a>
+                <a href="#">99</a>
+                <a href="#">100</a>
+                <a href="#">下一页</a>
+                <a href="#">尾页</a>
+            </div>
+        </div>
+        <div class="edu_r edu2_r">
+        	<div class="edu_r1">
+            	<div class="edu_hd">
+                	<p>用户信息</p>
+                </div>
+                <div class="edu_r_bd">
+                	<div class="edu_r_user">
+                    	<img src="images/user_pic.jpg" width="62" height="62"  alt=""/>
+                        <div class="edu_r_user1">
+                        	<p class="edu_r_name">太谷二中_张老师</p>
+                    		<p class="edu_r_user3">已上传资源<a href="jyzy_list2.html">100</a>次</p>
+                        </div>
+                        <div class="cl"></div>
+					</div>	
+                    <div class="edu_r_user2">
+                   	  <p>年级：<span>一年级</span></p>
+                      <p>科目：<span>语文</span></p>
+                    </div>
+                    <a onClick="TGDialogS('tcbox')" href="#" class="edu_r_user4"> <span></span>上传我的资源 </a> 
+                      <!--TCBox S-->
+                      <div class="dialog" id="tcbox" style="display:none">
+                        <div class="tcbox_info">
+                          <div class="tcbox_title"> <span>上传资源</span> <a href="javascript:void(0)" onClick="closeDialog()"></a> </div>
+                          <form method="post" id="tc_content" class="tcbox_content">
+                            <div class="tc_li"><span>标&nbsp;&nbsp;&nbsp;&nbsp;题：</span>
+                              <input type="text" class="tc_input">
+                            </div>
+                            <div  class="tc_li"><span>上传者：</span>
+                              <input type="text" class="tc_input" disabled value="张老师">
+                            </div>
+                            <div class="tc_li"><span>资源详情：</span>
+                              <select id="select">
+                                <option value="">学段</option>
+                                <option value="">小学</option>
+                                <option value="">初中</option>
+                                <option value="">高中</option>
+                              </select>
+                              <select id="select">
+                                <option value="">年级</option>
+                                <option value="">一年级</option>
+                                <option value="">二年级</option>
+                                <option value="">三年级</option>
+                              </select>
+                              <select id="select">
+                                <option value="">科目</option>
+                                <option value="">语文</option>
+                                <option value="">数学</option>
+                                <option value="">英语</option>
+                              </select>
+                            </div>
+                            <div class="tc_li"> <span>资源类型：</span>
+                                <div class="fl-space2">
+                                  <input type="radio" name="radio2" id="radio3" class="radio fl-space" />
+                                  <label for="radio3" class="fl">本地资源</label>
+                                </div>
+                                <div class="fl-space2">
+                                  <input type="radio" name="radio2" id="radio4" class="radio fl-space" />
+                                  <label for="radio4" class="fl">导学案</label>
+                                </div>
+                                <div class="fl-space2">
+                                  <input type="radio" name="radio2" id="radio5" class="radio fl-space" />
+                                  <label for="radio5" class="fl">视频资源</label>
+                                </div>
+                                <div class="fl-space2">
+                                  <input type="radio" name="radio2" id="radio6" class="radio fl-space" />
+                                  <label for="radio6" class="fl">远教资源</label>
+                                </div>
+                            </div>
+                            <div class="tc_li"><span>上传资源：</span>
+                              <a class="tc_upload">选择文件<input type="file" value="上传"></a>
+                            </div>
+                            <div class="tc_btn">
+                              <input type="submit" class="tc_submit" value="确定">
+                              <input type="button" class="tc_submit left10" value="取消" onClick="closeDialog()">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <!--TCBox E-->
+                      <div class="edu_user_center">
+                    	<span>个人中心</span>
+                        <ul class="edu_user_nav">
+                        	<li class="edu_nav_li"><a href="jyzy_list2.html">我已上传的资源</a></li>
+                        	<li><a href="jyzy_user.html">个人资料</a></li>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--列表页内容 E-->
+<div class="cl"></div>
+
+<!--底部 S-->
+<div id="footer">
+    <div class="footer1">
+        <div class="footer">
+            <div class="footer1_l">
+                <p>太谷教育信息网</p>
+                <span>邮编：030800</span>
+                <span>地址：山西省晋中市太谷县</span>
+                <span>Email：tgxjyxx@163.com</span>
+            </div>
+            <div class="footer1_r">
+                <img src="images/footer_img.png" width="56" height="68" alt=""/>
+                <p class="footer_menu">
+                    <a href="xxgk.html">信息公开</a><span>|</span>
+                    <a href="news.html">教育新闻</a><span>|</span>
+                    <a href="bszn.html">办事指南</a><span>|</span>
+                    <a href="hudong.html">互动交流</a><span>|</span>
+                    <a href="jyzy.html">教育资源</a><span>|</span>
+                    <a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+                    <a href="school.html">学校专栏</a>
+                </p>
+                <div class="cl"></div>
+                <div class="design">Design：<a href="http://www.sxzyrj.com/">山西智云软件</a>版权所有：太谷教育信息网</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer">
+            <span>Copyright © 2015 WWW.SXTGEDU.NET</span>
+            <p>非经营性互联网信息服务审批号 <a href="#">(晋)ICP备07000139号</a></p>
+        </div>
+    </div>
+</div>
+<!--底部 E-->
+<script src="js/milo-min.js"></script> 
+<script>
+function TGDialogS(e){
+	need("biz.dialog-min",function(Dialog){
+		Dialog.show({
+			id:e,
+			bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+			opacity:30      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	});
+}
+function closeDialog(){
+	need("biz.dialog-min",function(Dialog){
+		Dialog.hide();
+	});
+}
+</script>
+<script id="jsID" type="text/javascript">
+			//菜单JS
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+</script>
+
+
+</body>
+</html>

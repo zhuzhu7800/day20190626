@@ -1,0 +1,206 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>太谷教育信息网-学校专栏</title>
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/style.css">
+<script src="/TNews/static/js/jquery1.42.min.js"></script>
+<script src="/TNews/static/js/common.js"></script>
+<script src="/TNews/static/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<!--------Header s-------->
+<div id="header"> 
+  <!----Header_top s---->
+  <div class="header_top">
+    <div class="header_top_content">
+      <div class="top_nav">
+        <p><a href="#">行政办公系统</a></p>
+        <p><a href="#">人事管理系统</a></p>
+        <p><a href="#">学籍管理系统</a></p>
+        <p><a href="#">电子图书馆</a></p>
+        <p><a href="#">网络教研平台</a></p>
+        <p><a href="#">录播管理平台</a></p>
+      </div>
+      <div class="header_top_r"> <a href="#" class="login">登录</a><a href="#">网站地图</a> </div>
+    </div>
+  </div>
+  <!----Header_top e----> 
+  <!----Header_c s---->
+  <div class="header_c"> <a class="logo" href="http://www.sxtgedu.net"></a>
+    <div id="search">
+      <div class="searct_l">
+        <div id="choose" class="search_choose">教育新闻</div>
+        <ul class="search_select">
+          <li>教育新闻</li>
+          <li>教学研究</li>
+          <li>教育资源</li>
+        </ul>
+        <input class="search_txt" type="text" value=""  autocomplete="off" placeholder="搜我搜我!">
+      </div>
+      <div class="search_r">
+        <button class="search_btn" type="submit" >搜索</button>
+      </div>
+    </div>
+  </div>
+  <!----Header_c e----> 
+  <!----Header_menu s---->
+  <div class="header_menu">
+    <ul id="nav" class="nav clearfix">
+      <li class="nLi">
+        <h3><a href="index.html" target="_blank">首页</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="news.html" target="_blank">教育新闻</a></h3>
+        <ul class="sub">
+          <li><a href="news.html">教育动态</a></li>
+          <li><a href="news.html">教育新闻</a></li>
+          <li><a href="news.html">热点关注</a></li>
+        </ul>
+      </li>
+      <li class="nLi "> 
+        <!-- 假设当前频道为“预告片”，手动或后台程序添加titOnClassName类名（默认是'on'），相当于设置参数defaultIndex:1。若同时设置参数returnDefault:true，则鼠标移走后0.3秒返回当前频道 -->
+        <h3><a href="jxyj.html" target="_blank">教学研究</a></h3>
+        <ul class="sub">
+          <li><a href="jxyj.html">教育教学</a></li>
+          <li><a href="jxyj.html">信息技术</a></li>
+          <li><a href="jxyj.html">精选题库</a></li>
+        </ul>
+      </li>
+      <li class="nLi ">
+        <h3><a href="jyzy.html" target="_blank">教育资源</a></h3>
+         
+      </li>
+      <li class="nLi">
+        <h3><a href="http://wljy.jzedu.net/" target="_blank">网络教研</a></h3>
+      </li>
+      <li class="nLi on">
+        <h3><a href="school.html" target="_blank">学校专栏</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="xxgk.html" target="_blank">信息公开</a></h3>
+        <ul class="sub">
+          <li><a href="xxgk.html">通知公告</a></li>
+          <li><a href="xxgk_gs.html">股市动态</a></li>
+          <li><a href="bszn.html">办事指南</a></li>
+        </ul>
+      </li>
+      <li class="nLi">
+        <h3><a href="hudong.html" target="_blank">互动交流</a></h3>
+        <ul class="sub">
+          <li><a href="hudong2.html">互动交流</a></li>
+          <li><a href="hudong2.html">调查征集</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!----Header_menu e----> 
+</div>
+<!--------Header e-------->
+
+<!--banner S-->
+<div id="banner_school_article">
+    <div class="banner_school_article">
+    	<p>太谷二中</p>
+        <span>办特色学校，创一流业绩，育优秀人才</span>
+    </div>
+</div>
+<!--banner E-->
+
+<!--学校专栏_内容 S-->
+<div id="article_school">
+    <div class="current">当前位置 ： 
+        <a href="school.html">学校专栏</a>>
+        <span>太谷二中</span>
+    </div>
+    <div class="article_school_info">
+    	<p class="article_school_title">学校简介</p>
+        <div class="article_school_info1">
+        	<img src="images/article_school1.jpg" width="350" height="230" alt=""/>
+            <span>太谷县第二中学位于三晋腹地太谷县城北，创建于1978年9月，现为二十六轨制省重点高中，省示范高中，是中国人民解放军空军在山西省建立的第一个“飞行学员早期培训基地”。是山西省高中教坛中的一颗闪烁之星，太谷二中建校三十年，学校以“办特色学校，创一流业绩，育优秀人才”为总体目标。培养了合格高中生10000余名，为高等学校输送5000余名大学生，为艺术、体育类院校输送600余名特长人才，为中国人民解放军空军输送了50余名飞行学员，教学成绩历年稳居全市同类中学前茅，多次受到省、市、县的表彰奖励，先后获“省德育示范学校”，“省文明学校”、“省高中新课程试验先进学校”、“省科研工作先进学校”、“省绿色学校”等十余项省级荣誉，多次被评为“省招飞工作先进单位”。</span>
+            <div class="cl"></div>
+        </div>
+        <div class="article_school_info2">
+        	<ul class="article_school fl">
+            	<div>
+                	<p>学校公告</p>
+                    <a href="school2.html">更多 ></a>
+                </div>
+            	<li><a href="article_school2.html">内蒙古教育同行到太师附小进行教学交流研讨</a></li>
+                <li><a href="article_school2.html">实验盟区全面开展课堂研讨活动</a></li>
+                <li><a href="article_school2.html">太谷二幼盟区开展教师集体教学评比活动</a></li>
+                <li><a href="article_school2.html">郭村小学举行教学楼命名暨揭牌仪式</a></li>
+                <li><a href="article_school2.html">中国教师杂志社记者到附小调研盟区建设</a></li>
+            </ul>
+            <ul class="article_school fr">
+            	<div>
+                	<p>学校新闻</p>
+                    <a href="school2.html">更多 ></a>
+                </div>
+            	<li><a href="article_school2.html">内蒙古教育同行到太师附小进行教学交流研讨</a></li>
+                <li><a href="article_school2.html">实验盟区全面开展课堂研讨活动</a></li>
+                <li><a href="article_school2.html">太谷二幼盟区开展教师集体教学评比活动</a></li>
+                <li><a href="article_school2.html">郭村小学举行教学楼命名暨揭牌仪式</a></li>
+                <li><a href="article_school2.html">中国教师杂志社记者到附小调研盟区建设</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--学校专栏_内容 E-->
+
+<div class="cl"></div>
+
+<!--底部 S-->
+<div id="footer">
+    <div class="footer1">
+        <div class="footer">
+            <div class="footer1_l">
+                <p>太谷教育信息网</p>
+                <span>邮编：030800</span>
+                <span>地址：山西省晋中市太谷县</span>
+                <span>Email：tgxjyxx@163.com</span>
+            </div>
+            <div class="footer1_r">
+                <img src="images/footer_img.png" width="56" height="68" alt=""/>
+                <p class="footer_menu">
+                    <a href="xxgk.html">信息公开</a><span>|</span>
+                    <a href="news.html">教育新闻</a><span>|</span>
+                    <a href="bszn.html">办事指南</a><span>|</span>
+                    <a href="hudong.html">互动交流</a><span>|</span>
+                    <a href="jyzy.html">教育资源</a><span>|</span>
+                    <a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+                    <a href="school.html">学校专栏</a>
+                </p>
+                <div class="cl"></div>
+                <div class="design">Design：<a href="http://www.sxzyrj.com/">山西智云软件</a>版权所有：太谷教育信息网</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer">
+            <span>Copyright © 2015 WWW.SXTGEDU.NET</span>
+            <p>非经营性互联网信息服务审批号 <a href="#">(晋)ICP备07000139号</a></p>
+        </div>
+    </div>
+</div>
+<!--底部 E-->
+
+
+<script id="jsID" type="text/javascript">
+			//菜单JS
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+</script>
+</body>
+</html>

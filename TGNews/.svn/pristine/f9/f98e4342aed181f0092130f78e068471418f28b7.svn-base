@@ -1,0 +1,218 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>太谷教育信息网-教育新闻-文章页</title>
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/style.css">
+<script src="/TNews/static/js/jquery1.42.min.js"></script>
+<script src="/TNews/static/js/common.js"></script>
+<script src="/TNews/static/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<!--------Header s-------->
+<div id="header"> 
+  <!----Header_top s---->
+  <div class="header_top">
+    <div class="header_top_content">
+      <div class="top_nav">
+        <p><a href="#">行政办公系统</a></p>
+        <p><a href="#">人事管理系统</a></p>
+        <p><a href="#">学籍管理系统</a></p>
+        <p><a href="#">电子图书馆</a></p>
+        <p><a href="#">网络教研平台</a></p>
+        <p><a href="#">录播管理平台</a></p>
+      </div>
+      <div class="header_top_r"> <a href="#" class="login">登录</a><a href="#">网站地图</a> </div>
+    </div>
+  </div>
+  <!----Header_top e----> 
+  <!----Header_c s---->
+  <div class="header_c"> <a class="logo" href="http://www.sxtgedu.net"></a>
+    <div id="search">
+      <div class="searct_l">
+        <div id="choose" class="search_choose">教育新闻</div>
+        <ul class="search_select">
+          <li>教育新闻</li>
+          <li>教学研究</li>
+          <li>教育资源</li>
+        </ul>
+        <input class="search_txt" type="text" value=""  autocomplete="off" placeholder="搜我搜我!">
+      </div>
+      <div class="search_r">
+        <button class="search_btn" type="submit" >搜索</button>
+      </div>
+    </div>
+  </div>
+  <!----Header_c e----> 
+  <!----Header_menu s---->
+  <div class="header_menu">
+    <ul id="nav" class="nav clearfix">
+      <li class="nLi">
+        <h3><a href="index.html" target="_blank">首页</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="news.html" target="_blank">教育新闻</a></h3>
+        <ul class="sub">
+          <li><a href="news.html">教育动态</a></li>
+          <li><a href="news.html">教育新闻</a></li>
+          <li><a href="news.html">热点关注</a></li>
+        </ul>
+      </li>
+      <li class="nLi "> 
+        <!-- 假设当前频道为“预告片”，手动或后台程序添加titOnClassName类名（默认是'on'），相当于设置参数defaultIndex:1。若同时设置参数returnDefault:true，则鼠标移走后0.3秒返回当前频道 -->
+        <h3><a href="jxyj.html" target="_blank">教学研究</a></h3>
+        <ul class="sub">
+          <li><a href="jxyj.html">教育教学</a></li>
+          <li><a href="jxyj.html">信息技术</a></li>
+          <li><a href="jxyj.html">精选题库</a></li>
+        </ul>
+      </li>
+      <li class="nLi ">
+        <h3><a href="jyzy.html" target="_blank">教育资源</a></h3>
+         
+      </li>
+      <li class="nLi">
+        <h3><a href="http://wljy.jzedu.net/" target="_blank">网络教研</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="school.html" target="_blank">学校专栏</a></h3>
+      </li>
+      <li class="nLi on">
+        <h3><a href="xxgk.html" target="_blank">信息公开</a></h3>
+        <ul class="sub">
+          <li><a href="xxgk.html">通知公告</a></li>
+          <li><a href="xxgk_gs.html">股市动态</a></li>
+          <li><a href="bszn.html">办事指南</a></li>
+        </ul>
+      </li>
+      <li class="nLi">
+        <h3><a href="hudong.html" target="_blank">互动交流</a></h3>
+        <ul class="sub">
+          <li><a href="hudong2.html">互动交流</a></li>
+          <li><a href="hudong2.html">调查征集</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!----Header_menu e----> 
+</div>
+<!--------Header e-------->
+
+<!--banner S-->
+<div id="banner"></div>
+<!--banner E-->
+<div class="cl"></div>
+
+<!--列表页内容 S-->
+<div id="list">
+    <!--二级导航 S-->
+    <div class="nav2">
+    	<div class="nav2_title">
+        	<div>信息公开</div>
+            <span>EDUCATION NEWS</span>
+        </div>
+        <ul>
+        	<li class="nav2_li_hover"><a href="xxgk.html" class="nav2_a_hover">通知公告</a></li>
+            <li><a href="xxgk.html">股室动态</a></li>
+            <li><a href="xxgk.html">办事指南</a></li>
+        </ul>
+    </div>
+    <!--二级导航 E-->
+    <!--列表 S-->
+    <div class="list">
+    	<div class="current">当前位置 ： 
+        	<a href="xxgk.html">信息公开</a>>
+            <a href="xxgk.html">通知公告</a>>
+        	<span>学校停电之后……——对多媒体教学泛滥的反思与对策</span>
+        </div>
+        <!--文章页 S-->
+        <div class="article">
+        	<p class="article_title">学校停电之后……——对多媒体教学泛滥的反思与对策</p>
+            <div class="article_message">
+            	<span>发布者：太谷教育信息网</span>
+            	<span class="article_icon1">发布时间：2015-11-11</span>
+            	<span class="article_icon2">浏览次数：66</span>
+            </div>
+            <p class="article_content">不知从何时起，"黑板+粉笔"的传统课堂仿佛在一夜之间消失了，取而代之的是铺天盖地的"鼠标+屏幕"。多媒体发展速度之快令人始料不及，但多媒体的现实使用效果却令我们喜忧参半。</p>
+    		<p class="article_content">镜头一:这一天，学校突然停电了。我迅速赶往教学区巡视，途中看到的景象令我愕然:课堂教学都停下来了。有的教师和学生一起安静地等待恢复供电;有的教室里学生吵翻了天，教师无法控制这突如其来的变故;有的教师干脆让学生改上自习，自己则跑去找也工了……难道学校停电了，教学也要停下来吗?我们的教师啊，不播放课件居然连课也不会上了?</p>
+            <p class="article_content">镜头二:我在学期中段的学生问卷调查中惊讶地发现:作业抄袭的现象大有抬头之势!严肃迄问之下，学生纷纷诉苦:课堂内容太多，他们无法消化;教学速度太快，他们无法记忆;每天每节不停的多媒体教学，他们眼花缭乱、头晕目眩;作业布直太多，他们无法完成……要知道，我校是辖区内唯一一所优质初中，生源素质当属全区一流。没想到，这样的学生也会沦落到抄袭作业的地步，真让人担忧!</p>
+        </div>
+        <div class="article_guide">
+        	<div class="article_guide_l"><span>上一篇： </span><a href="article2.html">太谷县召开中小学校长工作述职及经验交流会</a></div>
+        	<div class="article_guide_r"><span>下一篇： </span><a href="article2.html">晋中市督导室领导视察附小图书仪器</a></div>
+        </div>
+        <!--页面分享 S-->
+        <div id="share">
+        	<div class="bshare-custom icon-medium">
+                <span class="bshare">分享到：</span>
+                <a title="分享到微信" class="bshare-weixin"></a>
+                <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                <a title="分享到QQ空间" class="bshare-qzone"></a>
+                <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                <a title="分享到复制网址" class="bshare-clipboard"></a>
+                <span class="BSHARE_COUNT bshare-share-count">0</span>
+            </div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </div>
+        <!--页面分享 E-->
+        <!--文章页 E-->
+    </div>
+    <!--列表 E-->
+</div>
+<!--列表页内容 E-->
+<div class="cl"></div>
+
+<!--底部 S-->
+<div id="footer">
+    <div class="footer1">
+        <div class="footer">
+            <div class="footer1_l">
+                <p>太谷教育信息网</p>
+                <span>邮编：030800</span>
+                <span>地址：山西省晋中市太谷县</span>
+                <span>Email：tgxjyxx@163.com</span>
+            </div>
+            <div class="footer1_r">
+                <img src="images/footer_img.png" width="56" height="68" alt=""/>
+                <p class="footer_menu">
+                    <a href="xxgk.html">信息公开</a><span>|</span>
+                    <a href="news.html">教育新闻</a><span>|</span>
+                    <a href="bszn.html">办事指南</a><span>|</span>
+                    <a href="hudong.html">互动交流</a><span>|</span>
+                    <a href="jyzy.html">教育资源</a><span>|</span>
+                    <a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+                    <a href="school.html">学校专栏</a>
+                </p>
+                <div class="cl"></div>
+                <div class="design">Design：<a href="http://www.sxzyrj.com/">山西智云软件</a>版权所有：太谷教育信息网</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer">
+            <span>Copyright © 2015 WWW.SXTGEDU.NET</span>
+            <p>非经营性互联网信息服务审批号 <a href="#">(晋)ICP备07000139号</a></p>
+        </div>
+    </div>
+</div>
+<!--底部 E-->
+
+<script id="jsID" type="text/javascript">
+			//菜单JS
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+</script>
+</body>
+</html>

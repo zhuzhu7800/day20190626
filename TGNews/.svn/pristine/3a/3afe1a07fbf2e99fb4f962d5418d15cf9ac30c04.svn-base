@@ -1,0 +1,33 @@
+package cn.bdqn.pojo;
+
+public class Biao {
+	private Integer id;
+	private String name;
+	private Integer column_id;
+	private String categoryName;
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getColumn_id() {
+		return column_id;
+	}
+	public void setColumn_id(Integer column_id) {
+		this.column_id = column_id;
+	}
+
+}

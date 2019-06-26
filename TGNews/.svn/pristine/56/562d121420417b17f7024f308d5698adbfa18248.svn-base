@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.NewsssDao">
+	<select id="getAll" resultType="cn.bdqn.pojo.Columnn">
+		SELECT c.id,c.cname,s.name FROM `column` c,`ein_special` s WHERE c.sid = s.id
+	</select>
+	
+	<delete id="del">
+		DELETE FROM column WHERE id = #{id}
+	</delete>
+	 
+	<insert id="add" parameterType="cn.bdqn.pojo.Columnn">
+		INSERT INTO `column` VALUES(NULL,#{cname},NULL,NULL)
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.Columnn">
+		select * from column
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Columnn">
+		update column
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="cname != null">cname=#{cname},</if>
+		</trim>
+	</update> 
+</mapper>

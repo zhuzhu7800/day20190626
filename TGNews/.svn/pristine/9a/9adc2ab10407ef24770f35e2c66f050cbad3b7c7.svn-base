@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>咨询窗口:太谷县教育信息网</title>
+<style type="text/css">
+*{
+outline: 0;
+padding: 0;
+margin: 0;
+border: 0;
+}
+.cl{ clear:both; overflow:hidden;}
+body{ background:#e6e6e6; font-size:14px; color:#333;}
+#main{ width:1000px; height:730px; background:#FFF; margin:55px auto 0;box-shadow: 0px 3.464px 9px 0px rgba( 0, 0, 0, .5);}
+h1{ text-align:center; font-size:26px; line-height:110px; font-family:'\5FAE\8F6F\96C5\9ED1'; font-weight:normal;}
+.prompt{ width:708px; height:60px; border:1px dashed #e0e0e0; margin:0 auto; background:url(images/consult.gif) no-repeat; padding:43px 45px 10px; font-size:12px; line-height:26px; color: #999;}
+i{ color:#d62e2f; font-style:normal;}
+.content{ width:800px; height:437px; background:url(images/consult.gif) 0 -110px no-repeat; padding:60px 100px 0 100px;}
+.content .number{ float:left; display:block; margin-left:80px; overflow:hidden;}
+.content p span{ width:82px; height:14px; padding:13px 0; display:block; float:left;}
+.content p span i{ margin-right:5px;}
+.content p input{ float:left; width:230px; height:14px; padding:13px 0 12px;; border-bottom:1px solid #ccc; margin-left:10px;}
+.content .type{ margin-top:60px;}
+.content .radio{ width:300px; height:14px;padding:13px 0 12px; margin-left:10px;}
+.content textarea{ border:1px solid #ccc; width:590px; height:118px; margin-top:22px; resize: none; padding:10px; margin-left:10px;}
+.content .tj{ width:120px; height:40px; background:#2359a7; border-radius:2px; text-align:center; line-height:40px; color:#fff; font-size:16px; font-family:'\5FAE\8F6F\96C5\9ED1'; float:right; margin-right:92px; margin-top:10px;}
+input.zt{ width:500px;}
+</style>
+</head>
+
+<body>
+<div id="main">
+<h1>咨询窗口:太谷县教育信息网</h1>
+<div class="prompt">在您通过本网站诉讼时，请务必做到实事求是，并留下您的真实姓名、联系电话，我们将为您保密并及时回复。否则，做匿名处理，不予回复。<i>*</i>号为必填项目。</div>
+<div class="content">
+<p><span><i>*</i>姓&nbsp;&nbsp;&nbsp;名:</span><input type="text"><span><i>*</i>电话/邮箱:</span><input type="text"></p>
+<div style="clear:both; overflow:hidden"></div>
+<p class="type"><span><i>*</i>咨询类型:</span><div class="radio">
+  <label>
+    <input type="radio" name="RadioType" value="咨询" id="RadioType_0">
+    咨询</label>
+  <label>
+    <input type="radio" name="RadioType" value="投诉" id="RadioType_1">
+    投诉</label>
+  <label>
+    <input type="radio" name="RadioType" value="建议或意见" id="RadioType_2">
+    建议或意见</label>
+</div></p>
+<div class="cl"></div>
+<p><span><i>*</i>主&nbsp;&nbsp;&nbsp;&nbsp;题:</span><input type="text" class="zt"></p>
+<div class="cl"></div>
+<p><span><i>*</i>内&nbsp;&nbsp;&nbsp;&nbsp;容:</span><textarea></textarea></p>
+<input type="submit" class="tj" value="提交">
+</div>
+</div>
+</body>
+</html>

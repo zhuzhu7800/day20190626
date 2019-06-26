@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.NeiRongDao">
+	
+	<select id="getAll" resultType="cn.bdqn.pojo.NeiRong">
+		SELECT * FROM ein_neirong,ein_column WHERE ein_neirong.`school_id`=ein_column.`id`
+	</select>
+	<delete id="del">
+		DELETE FROM ein_neirong WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.NeiRong">
+		INSERT INTO ein_neirong VALUES(null,#{name},#{column_id})
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.NeiRong">
+		select * from ein_neirong
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.NeiRong">
+		update ein_neirong set name=#{name} where id=#{id}
+	</update> 
+	
+</mapper>

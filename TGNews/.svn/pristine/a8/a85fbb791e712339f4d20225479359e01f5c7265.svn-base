@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>太谷秧歌</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/tgyg.css">
+</head>
+
+<body>
+<!--头部-->
+<div id="header">
+<div class="header_content">
+<img src="images/logo_zt.png"  class="fl" width="24" height="24"  alt="太谷秧歌"/>
+<a href="index.html" class="fl">太谷教育信息网</a>
+<a href="http://www.tgerzhong.com.cn/xingyi/index.asp" class="fr">车氏形意拳</a>
+<a href="tgyg.html" class="fr right15">太谷秧歌</a>
+</div></div>
+<!--内容区-->
+<div id="content">
+<!--秧歌简介-->
+<div id="part1">
+  <img class="info_img"src="images/tgyg_info_img.jpg" width="246" height="160"  alt=""/>
+  <div class="info_c">在中国的民间艺苑中是一枝独具风彩的奇葩。太谷秧歌：受惠于山西晋中一带经济、文化的发展，尤其在清末叶山西商业繁荣时期，得到了明显的发展，逐步由田间、街巷的舞蹈演变成为舞台戏剧。太谷秧歌：内容取材于当地人民群众日常生活，以灵活的表演迅速反映现实生活。太谷秧歌：在艺术上也日趋成熟，声腔、乐班、演技都具有了较高的水平，服装、道具也日趋考究，已成为当地群众喜闻乐见的小戏剧。</div>
+  </div>
+
+<div id="part2">
+<div class="part2_l">
+<div class="list_title">共收录太谷秧歌<span>24</span>首</div>
+<ul>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#" class="on">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+<li><a href="#">回家</a></li>
+</ul>
+</div>
+<div class="part2_r">
+<embed src="http://www.sxtgedu.net/yg/yangge/ddl.asf" width="500" height="356" autostart="true" loop="true" align="middle" border="0">
+</div>
+   </div>
+</div>
+
+<div id="footer">
+<p>
+<a href="xxgk.html">信息公开</a><span>|</span>
+<a href="news.html">教育新闻</a><span>|</span>
+<a href="bszn.html">办事指南</a><span>|</span>
+<a href="hudong.html">互动交流</a><span>|</span>
+<a href="jyzy.html">教育资源</a><span>|</span>
+<a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+<a href="school.html">学校专栏</a><span>|</span>
+<a href="jxyj.html">教学研究</a>
+</p>
+<p>COPYRIGHT © 2015  ALL RIGHTS RESERVED</p>
+<p>太谷教育信息网 版权所有</p>
+</div>
+</body>
+</html>

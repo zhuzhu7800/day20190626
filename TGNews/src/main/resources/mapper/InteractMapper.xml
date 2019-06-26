@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.InteractDao">
+	<select id="getAll" resultType="cn.bdqn.pojo.Interact">
+		select * from ein_interact 
+	</select>
+	<delete id="del">
+		DELETE FROM ein_interact WHERE id = #{id}
+	</delete>
+
+		
+	<select id="selById" resultType="cn.bdqn.pojo.Interact">
+		SELECT * FROM ein_interact WHERE id=#{id}
+	</select>
+	
+	<update id="upd">
+		update ein_interact set reply=#{reply},Ttime=NOW() where id=#{id}
+	</update>
+</mapper>

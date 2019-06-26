@@ -1,0 +1,70 @@
+package cn.bdqn.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.alibaba.fastjson.JSON;
+
+import cn.bdqn.pojo.Characteristic;
+import cn.bdqn.service.CharacteristicService;
+
+@Controller
+@RequestMapping("/characteristic")
+public class CharacteristicController {
+	@Resource(name="characteristicService")
+	private CharacteristicService characteristicService;
+	
+	@ResponseBody
+	@RequestMapping("getAll")
+	public String getAll() {
+		List<Characteristic> list = characteristicService.getAll();
+		return JSON.toJSONString(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping("del/{id}")
+	public String del(@PathVariable int id) {
+		int res = characteristicService.del(id);
+		return JSON.toJSONString(res);
+	}
+	
+	@RequestMapping("add")
+	public String add(Characteristic characteristic) {
+		int res = characteristicService.add(characteristic);
+		if(res>0) {
+			return "redirect:/characteristic/zhuan";
+		}else {
+			return "redirect:/characteristic/zhuan";
+		}
+	}
+	
+	@RequestMapping("/zhuan")
+	public String zhuan() {
+		return "houjsp/tsjy";
+	}
+	
+	@ResponseBody
+	@RequestMapping("updTo/{id}")
+	public String updTo(@PathVariable int id) {
+		Characteristic characteristic = characteristicService.getById(id);
+		return JSON.toJSONString(characteristic);
+	}
+	
+	@RequestMapping("upd")
+	public String upd(Characteristic characteristic) {
+		int res = characteristicService.upd(characteristic);
+		if(res>0) {
+			return "redirect:/characteristic/zhuan";
+		}else {
+			return "redirect:/characteristic/zhuan";
+		}
+	}
+}

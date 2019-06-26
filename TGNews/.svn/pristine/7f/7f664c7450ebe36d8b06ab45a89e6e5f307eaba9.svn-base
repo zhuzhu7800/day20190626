@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.NewsDao">
+	
+	<select id="getAll" resultType="cn.bdqn.pojo.News">
+		SELECT * FROM ein_news,ein_column WHERE ein_news.`news_type_id`=ein_column.`id` AND ein_column.`parentId`=1 
+	</select>
+	<delete id="del">
+		DELETE FROM ein_news WHERE id = #{id}
+	</delete>
+	
+	<insert id="add">
+		insert into ein_news values(null,#{title},#{createDate},#{news_type_id},#{author},#{context},#{link_type})
+	</insert>	
+	
+	
+	<select id="getCon" resultType="cn.bdqn.pojo.News">
+		SELECT * FROM ein_news,ein_column WHERE ein_news.`news_type_id`=ein_column.`id` AND ein_column.`parentId`=1 AND ein_column.`id`=#{id}
+	</select>
+	
+	<select id="selById" resultType="cn.bdqn.pojo.News">
+		select * from ein_news where id=#{id}
+	</select>
+	
+	<update id="upd">
+		update ein_news set title=#{title},createDate=#{createDate},author=#{author}  where id=#{id}
+	</update>
+	
+	<select id="getSelect" resultType="cn.bdqn.pojo.News">
+SELECT categoryName,Id FROM ein_column WHERE ein_column.`parentId`=1
+	</select>
+</mapper>

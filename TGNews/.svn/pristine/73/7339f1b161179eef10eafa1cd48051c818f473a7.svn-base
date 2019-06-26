@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>广告</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<script src="js/ad.js"></script>
+</head>
+<body>
+<div id=ad1 style="z-index:5">
+	<a href="#" target=_blank>
+    	<img src="http://wh.vanke.com/UpLoadFiles2008/092506.gif">
+    </a>
+</div>
+
+<script type=text/javascript>
+	var ad1=new AdMove("ad1");
+	ad1.Run();
+	
+<!--//可兼容多组漂浮
+	//var ad1=new AdMove("ad2");
+	//ad2.Run();
+//-->
+</script>
+</body>
+</html>

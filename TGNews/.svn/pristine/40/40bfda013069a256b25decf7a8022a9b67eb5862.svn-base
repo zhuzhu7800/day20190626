@@ -1,0 +1,40 @@
+package cn.bdqn.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import cn.bdqn.dao.BiaoDao;
+import cn.bdqn.pojo.Biao;
+import cn.bdqn.service.BiaoService;
+@Service("biaoService")
+public class BiaoServiceImpl implements BiaoService {
+	@Resource(name="biaoDao")
+	private BiaoDao biaoDao;
+	public List<Biao> getAll(Integer id) {
+		// TODO Auto-generated method stub
+		return biaoDao.getAll(id);
+	}
+
+	public int del(int id) {
+		// TODO Auto-generated method stub
+		return biaoDao.del(id);
+	}
+
+	public int add(Biao biao) {
+		// TODO Auto-generated method stub
+		return biaoDao.add(biao);
+	}
+
+	public Biao getById(int id) {
+		// TODO Auto-generated method stub
+		return biaoDao.getById(id);
+	}
+
+	public int upd(Biao biao) {
+		// TODO Auto-generated method stub
+		return biaoDao.upd(biao);
+	}
+}

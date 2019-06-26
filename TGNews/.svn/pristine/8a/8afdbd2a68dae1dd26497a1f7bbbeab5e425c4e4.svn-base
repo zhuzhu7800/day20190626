@@ -1,0 +1,22 @@
+package cn.bdqn.service;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import cn.bdqn.pojo.News;
+
+public interface NewssService {
+	/**
+	 * 查询全部文章
+	 */
+	List<News> getAll();
+	/**
+	 * 添加文章
+	 */
+	int add(News news);
+	/**
+	 * 删除
+	 */
+	int del(@Param(value="id")int id);
+}

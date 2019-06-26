@@ -1,0 +1,79 @@
+package cn.bdqn.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.alibaba.fastjson.JSON;
+
+import cn.bdqn.pojo.Columnn;
+import cn.bdqn.pojo.News;
+import cn.bdqn.pojo.Special;
+import cn.bdqn.service.NewssService;
+import cn.bdqn.service.NewsssService;
+
+@Controller
+@RequestMapping("/newsss")
+public class NewsssController {
+	
+	@Resource(name="newsssService")
+	private NewsssService newsssService;
+	
+	@ResponseBody
+	@RequestMapping("getAll")
+	public String getAll() {
+		List<Columnn> list = newsssService.getAll();
+		return JSON.toJSONString(list);
+	}
+	
+	/*@ResponseBody
+	@RequestMapping("getMh")
+	public String getMh(HttpServletRequest request) {
+		Integer id = Integer.parseInt(request.getParameter("link_type"));
+		List<News> list = newsssService.getMh(id);
+		return JSON.toJSONString(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping("del/{id}")
+	public String del(@PathVariable int id) {
+		int res = newsssService.del(id);
+		return JSON.toJSONString(res);
+	}
+	
+	@RequestMapping("add")
+	public String add(News news) {
+		int res = newsssService.add(news);
+		if(res>0) {
+			return "redirect:/newss/zhuan";
+		}else {
+			return "redirect:/newss/zhuan";
+		}
+	}
+	
+	@RequestMapping("/zhuan")
+	public String zhuan() {
+		return "houjsp/ztlm2";
+	}
+	
+	@ResponseBody
+	@RequestMapping("updTo/{id}")
+	public String updTo(@PathVariable int id) {
+		News news = newsssService.getById(id);
+		return JSON.toJSONString(news);
+	}
+	
+	@RequestMapping("upd")
+	public String upd(News news) {
+		int res = newsssService.upd(news);
+		if(res>0) {
+			return "redirect:/newss/zhuan";
+		}else {
+			return "redirect:/newss/zhuan";
+		}
+	}*/
+}

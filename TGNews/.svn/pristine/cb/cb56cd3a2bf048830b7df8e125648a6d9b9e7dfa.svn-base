@@ -1,0 +1,71 @@
+package cn.bdqn.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.alibaba.fastjson.JSON;
+
+import cn.bdqn.pojo.Columns;
+import cn.bdqn.service.NewssService;
+
+@Controller
+@RequestMapping("/newss")
+public class NewssController {
+	
+	@Resource(name="newssService")
+	private NewssService newssService;
+	
+	@ResponseBody
+	@RequestMapping("getAll/{column}")
+	public String getAll(@PathVariable int column,HttpServletRequest request) {
+		List<Columns> list = newssService.getAll(column);
+		return JSON.toJSONString(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping("getMh")
+	public String getMh(HttpServletRequest request) {
+		Integer column = Integer.parseInt(request.getParameter("column"));
+		Integer parentId = Integer.parseInt(request.getParameter("link_type"));
+		List<Columns> list = newssService.getMh(column, parentId);
+		return JSON.toJSONString(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping("del/{id}")
+	public String del(@PathVariable int id) {
+		int res = newssService.del(id);
+		return JSON.toJSONString(res);
+	}
+	
+	@ResponseBody
+	@RequestMapping("add")
+	public String add(Columns columns) {
+		int res = newssService.add(columns);
+		return JSON.toJSONString(res);
+	}
+	
+	@ResponseBody
+	@RequestMapping("updTo/{id}")
+	public String updTo(@PathVariable int id) {
+		
+		return JSON.toJSONString("");
+	}
+	
+	@RequestMapping("upd")
+	public String upd(Columns news) {
+		int res = newssService.upd(news);
+		if(res>0) {
+			return "redirect:/newss/zhuan";
+		}else {
+			return "redirect:/newss/zhuan";
+		}
+	}
+}

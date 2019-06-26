@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.MechanismDao">
+	
+	<select id="getAll" resultType="cn.bdqn.pojo.Mechanism">
+		SELECT * FROM ein_mechanism
+	</select>
+	<delete id="del">
+		DELETE FROM ein_mechanism WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.Mechanism">
+		INSERT INTO ein_mechanism VALUES(null,#{name},#{position},#{photo})
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.Mechanism">
+		select * from ein_mechanism
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Mechanism">
+		UPDATE ein_mechanism SET NAME=#{name},POSITION=#{position} WHERE id=#{id}
+	</update> 
+	
+</mapper>

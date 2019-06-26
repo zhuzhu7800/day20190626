@@ -1,0 +1,87 @@
+package cn.bdqn.controller;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.UUID;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.alibaba.fastjson.JSON;
+
+
+
+import cn.bdqn.pojo.Mechanism;
+
+
+import cn.bdqn.service.MechanismService;
+
+
+@Controller
+@RequestMapping("mc")
+public class MechanismController {
+	@Resource(name="mechanismService")
+	private MechanismService mechanismService;
+	
+	@ResponseBody
+	@RequestMapping("/getAll")
+	private String getAll() {
+		List<Mechanism> list=mechanismService.getAll();
+		return JSON.toJSONString(list);
+	}
+	
+	@ResponseBody
+	@RequestMapping("del/{id}")
+	public String del(@PathVariable int id) {
+		int res = mechanismService.del(id);
+		return JSON.toJSONString(res);
+	}
+	
+	@RequestMapping("add")
+	public String add(MultipartFile pictureFile,Mechanism mechanism) {
+		//1.拿到文件名称  123.jpg
+				String name=pictureFile.getOriginalFilename();
+				//2.给文件起个新名字
+				String newName=UUID.randomUUID().toString()+name.substring(name.indexOf("."));
+				try {
+					pictureFile.transferTo(new File(""+newName));
+				} catch (IllegalStateException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				mechanism.setPhoto("F:\\新建文件夹\\TGNews\\src\\main\\webapp\\static\\images\\"+newName);
+		int res = mechanismService.add(mechanism);
+		if(res>0) {
+			return "houjsp/jgsz";
+		}else {
+			return "houjsp/jgsz";
+		}
+	}
+	
+	@ResponseBody
+	@RequestMapping("updTo/{id}")
+	public String updTo(@PathVariable int id) {
+		Mechanism mechanism = mechanismService.getById(id);
+		
+		return JSON.toJSONString(mechanism);
+	}
+	
+	@RequestMapping("upd")
+	public String upd(Mechanism mechanism) {
+		int res = mechanismService.upd(mechanism);
+		if(res>0) {
+			return "houjsp/jgsz";
+		}else {
+			return "houjsp/jgsz";
+		}
+	}
+}

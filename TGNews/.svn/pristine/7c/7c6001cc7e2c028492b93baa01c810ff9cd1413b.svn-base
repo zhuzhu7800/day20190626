@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.BiaoDao">
+
+	<select id="getAll" resultMap="biao">
+		SELECT * FROM `ein_biao` b,`ein_school` s WHERE b.`column_id`=s.`id` AND b.`school_id`=#{id}
+	</select>
+	<resultMap type="cn.bdqn.pojo.Biao" id="biao">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="column_id" column="column_id"/>
+		<result property="school_id" column="school_id"/>
+		<result property="bid" column="bid"/>
+		<collection property="school" javaType="cn.bdqn.pojo.School">
+			<id property="id" column="id"/>
+			<result property="school_name" column="school_name"/>
+			<result property="school_type_id" column="school_type_id"/>
+			<result property="school_section" column="school_section"/>
+			<result property="pic" column="pic"/>
+			<result property="createdBy" column="createdBy"/>
+			<result property="creationTime" column="creationTime"/>
+			<result property="modifyBy" column="modifyBy"/>
+			<result property="modifyDate" column="modifyDate"/>
+		</collection>
+	</resultMap>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.Biao">
+		INSERT INTO `ein_biao` VALUES(NULL,#{name},#{column_id},#{school_id},3) 
+	</insert>
+	
+	<select id="getByAddId" resultMap="biao">
+		SELECT s.`school_name` FROM `ein_biao` b,`ein_school` s WHERE b.`column_id`=s.`id` AND b.`school_id`=#{id}
+	</select>
+	
+	<!-- <delete id="del">
+		DELETE FROM ein_biao WHERE id = #{id}
+	</delete>
+
+	<select id="getById" resultType="cn.bdqn.pojo.Biao">
+		select * from ein_biao
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Biao">
+		update ein_biao set name=#{name} where id=#{id}
+	</update>  -->
+	 
+</mapper>

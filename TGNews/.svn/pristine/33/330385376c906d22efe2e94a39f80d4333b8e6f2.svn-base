@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.GuShiDao">
+	<select id="getAll" resultType="cn.bdqn.pojo.GuShi">
+		SELECT * FROM ein_gu
+	</select>
+	<delete id="del">
+		DELETE FROM ein_gu WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.GuShi">
+		INSERT INTO ein_gu VALUES(null,#{name})
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.GuShi">
+		select * from ein_gu
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.GuShi">
+		update ein_gu set name=#{name} where id=#{id}
+	</update> 
+</mapper>

@@ -1,0 +1,87 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>党的群众路线教育 - 太谷教育信息网</title>
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/zt.css">
+<link rel="stylesheet" type="text/css" href="/TNews/static/css/style.css">
+</head>
+
+<body>
+<!--专题图片开始-->
+<div id="slogan" style="background:url(upload/zhuanti/001.jpg) top center"></div>
+<!--专题图片结束-->
+<!--头部开始-->
+<div id="header">
+<div class="header_content">
+<img src="images/logo_zt.png"  class="fl" width="24" height="24"  alt="太谷秧歌"/>
+<a href="index.html" class="fl">太谷教育信息网</a>
+<a href="zhuanti_list2.html" class="fr">专题推荐</a>
+</div></div>
+<!--头部结束-->
+<!--内容区开始-->
+<div class="cl"></div>
+<div id="content">
+    <div class="abstract1">
+    	<!--列表 S-->
+    <div class="list">
+    	<div class="current">当前位置 ： 
+        	<a href="index.html">首页</a>>
+        	<a href="zhuanti.html">专题栏目</a>>
+        	<a href="zhuanti_list.html">文献资料</a>>
+        	<span>中国教师杂志社记者到附小调研盟区建设</span>
+        </div>
+        <div class="article">
+        	<p class="article_title">中国教师杂志社记者到附小调研盟区建设</p>
+            <div class="article_message">
+            	<span>发布者：太谷教育信息网</span>
+            	<span class="article_icon1">发布时间：2015-11-11</span>
+            	<span class="article_icon2">浏览次数：66</span>
+            </div>
+            <p class="article_content">11月10日，在晋中市人民政府教育督导室副处级督学段志爱的陪同下，中国教师杂志社杜永生副总编等一行3人，到太谷师范附小调研盟区建设。附小盟区创建于2011年，是晋中均衡教育发展的产物，盟区现有19所小学，400多名教师，5500余名学生。5年来，盟区按“管理上水平，教师提素质，学生得实惠、教育齐发展”的工作目标和思路，走出了一条城乡资源共享，教育均衡发展之路，调研中，附小校长王全福详细介绍了盟区建设中输出先进办学理念的经验和做法。</p>
+            <img src="images/article_img1.jpg" width="508" height="339" alt=""/ style=" width:508px; height:339px; display:block;margin:30px auto 0;">
+            <img src="images/article_img2.jpg" width="508" height="339" alt=""/ style=" width:508px; height:339px; display:block;margin:30px auto 0;">
+    </div>
+    <div class="article_guide">
+        	<div class="article_guide_l"><span>上一篇： </span><a href="zhuanti_article.html">太谷县召开中小学校长工作述职及经验交流会</a></div>
+        	<div class="article_guide_r"><span>下一篇： </span><a href="zhuanti_article.html">晋中市督导室领导视察附小图书仪器</a></div>
+    </div>
+    <!--页面分享 S-->
+    <div id="share">
+        	<div class="bshare-custom icon-medium">
+                <span class="bshare">分享到：</span>
+                <a title="分享到微信" class="bshare-weixin"></a>
+                <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                <a title="分享到QQ空间" class="bshare-qzone"></a>
+                <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                <a title="分享到复制网址" class="bshare-clipboard"></a>
+                <span class="BSHARE_COUNT bshare-share-count">0</span>
+            </div>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+			<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    </div>
+    <!--页面分享 E-->
+    </div>
+    </div>
+</div>
+<div class="cl"></div>
+<!--内容区结束-->
+<div id="footer">
+<p>
+<a href="xxgk.html">信息公开</a><span>|</span>
+<a href="news.html">教育新闻</a><span>|</span>
+<a href="bszn.html">办事指南</a><span>|</span>
+<a href="hudong.html">互动交流</a><span>|</span>
+<a href="jyzy.html">教育资源</a><span>|</span>
+<a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+<a href="school.html">学校专栏</a><span>|</span>
+<a href="jxyj.html">教学研究</a>
+</p>
+<p>COPYRIGHT © 2015  ALL RIGHTS RESERVED</p>
+<p>太谷教育信息网 版权所有</p>
+</div>
+</body>
+</html>

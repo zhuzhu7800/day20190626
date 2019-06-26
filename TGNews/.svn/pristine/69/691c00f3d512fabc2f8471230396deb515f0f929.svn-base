@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.NewssDao">
+	<select id="getAll" resultMap="columns">
+		SELECT e.*,(SELECT `categoryName` FROM ein_column WHERE id = e.`parentId`) AS cname FROM ein_column c,ein_columns e WHERE c.`id`=e.`column` AND e.`column`=#{id}
+	</select>
+	
+	<resultMap type="cn.bdqn.pojo.Columns" id="columns">
+		<id property="id" column="id"/>
+		<result property="title" column="title"/>
+		<result property="createDate" column="createDate"/>
+		<result property="parentId" column="parentId"/>
+		<result property="author" column="author"/>
+		<result property="column" column="column"/>
+		<result property="updBy" column="updBy"/>
+		<result property="updDate" column="updDate"/>
+		<result property="content" column="content"/>
+		<result property="cname" column="cname"/>	
+	</resultMap>
+	
+	<!-- <select id="getMh" resultType="cn.bdqn.pojo.News">
+		SELECT s.`id`,s.`title`,s.`createDate`,c.`categoryName`,s.`author` FROM `ein_news` s,`ein_column` c WHERE s.`cid`=c.`id` 
+			<if test="id != 0">
+				AND c.`id`=#{id}
+			</if>
+	</select>
+	
+	<delete id="del">
+		DELETE FROM ein_news WHERE id = #{id}
+	</delete>
+	 
+	<insert id="add" parameterType="cn.bdqn.pojo.News">
+		INSERT INTO ein_news VALUES(NULL,#{title},#{createDate},1,#{author},NULL,NULL,30)
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.News">
+		select * from ein_news
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.News">
+		update ein_news
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="title != null">title=#{title},</if>
+			<if test="createDate != null">createDate=#{createDate},</if>
+			<if test="author != null">author=#{author},</if>
+		</trim>
+	</update>   -->
+</mapper>

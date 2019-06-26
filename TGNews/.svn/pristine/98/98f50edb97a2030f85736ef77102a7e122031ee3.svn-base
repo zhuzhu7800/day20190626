@@ -1,0 +1,566 @@
+﻿<%@ page language="java" contentType="text/html;charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>太谷教育信息网</title>
+<link href="/TNews/static/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/TNews/static/css/index.css" rel="stylesheet" type="text/css">
+<script src="/TNews/static/js/jquery1.42.min.js"></script>
+<script src="/TNews/static/js/ad.js"></script>
+<script src="/TNews/static/js/common.js"></script>
+<script src="/TNews/static/js/jquery.SuperSlide.2.1.1.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+<!--------Header s-------->'
+<div id="header"> 
+  <!----Header_top s---->
+  <div class="header_top">
+    <div class="header_top_content">
+      <div class="top_nav">
+        <p><a href="#">行政办公系统</a></p>
+        <p><a href="#">人事管理系统</a></p>
+        <p><a href="#">学籍管理系统</a></p>
+        <p><a href="#">电子图书馆</a></p>
+        <p><a href="#">网络教研平台</a></p>
+        <p><a href="#">录播管理平台</a></p>
+      </div>
+      <div class="header_top_r"> <a href="#" class="login">登录</a><a href="#">网站地图</a> </div>
+    </div>
+  </div>
+  <!----Header_top e----> 
+  <!----Header_c s---->
+  <div class="header_c"> <a class="logo" href="http://www.sxtgedu.net"></a>
+    <div id="search">
+      <div class="searct_l">
+        <div id="choose" class="search_choose">教育新闻</div>
+        <ul class="search_select">
+          <li>教育新闻</li>
+          <li>教学研究</li>
+          <li>教育资源</li>
+        </ul>
+        <input class="search_txt" type="text" value=""  autocomplete="off" placeholder="搜我搜我!">
+      </div>
+      <div class="search_r">
+        <button class="search_btn" type="submit" >搜索</button>
+      </div>
+    </div>
+  </div>
+  <!----Header_c e----> 
+  <!----Header_menu s---->
+  <div class="header_menu">
+    <ul id="nav" class="nav clearfix">
+      <li class="nLi on">
+        <h3><a href="index.html" target="_blank">首页</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="news.html" target="_blank">教育新闻</a></h3>
+        <ul class="sub">
+          <li><a href="news.html">教育动态</a></li>
+          <li><a href="news.html">教育新闻</a></li>
+          <li><a href="news.html">热点关注</a></li>
+        </ul>
+      </li>
+      <li class="nLi "> 
+        <!-- 假设当前频道为“预告片”，手动或后台程序添加titOnClassName类名（默认是'on'），相当于设置参数defaultIndex:1。若同时设置参数returnDefault:true，则鼠标移走后0.3秒返回当前频道 -->
+        <h3><a href="jxyj.html" target="_blank">教学研究</a></h3>
+        <ul class="sub">
+          <li><a href="jxyj.html">教育教学</a></li>
+          <li><a href="jxyj.html">信息技术</a></li>
+          <li><a href="jxyj.html">精选题库</a></li>
+        </ul>
+      </li>
+      <li class="nLi ">
+        <h3><a href="jyzy.html" target="_blank">教育资源</a></h3>
+         
+      </li>
+      <li class="nLi">
+        <h3><a href="http://wljy.jzedu.net/" target="_blank">网络教研</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="school.html" target="_blank">学校专栏</a></h3>
+      </li>
+      <li class="nLi">
+        <h3><a href="xxgk.html" target="_blank">信息公开</a></h3>
+        <ul class="sub">
+          <li><a href="xxgk.html">通知公告</a></li>
+          <li><a href="xxgk.html">股市动态</a></li>
+          <li><a href="xxgk.html">办事指南</a></li>
+        </ul>
+      </li>
+      <li class="nLi">
+        <h3><a href="hudong.html" target="_blank">互动交流</a></h3>
+        <ul class="sub">
+          <li><a href="hudong.html">互动交流</a></li>
+          <li><a href="hudong.html">调查征集</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!----Header_menu e----> 
+</div>
+<!--------Header e--------> 
+<!--------content s-------->
+<div id="content"> 
+  <!--------part1 s-------->
+  <div id="part1">
+    <div class="part1_l"> 
+      <!--------content 焦点图s-------->
+      <div id="slideBox" class="slideBox">
+        <div class="hd">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="bd">
+          <ul>
+            <li>
+              <p>习近平参观曼彻斯特城市足球学院1</p>
+              <a href="article.html" target="_blank"><img src="upload/pic1.jpg" /></a></li>
+            <li>
+              <p>习近平参观曼彻斯特城市足球学院2</p>
+              <a href="article.html" target="_blank"><img src="upload/pic2.jpg" /></a></li>
+            <li>
+              <p>习近平参观曼彻斯特城市足球学院3</p>
+              <a href="article.html" target="_blank"><img src="upload/pic3.jpg" /></a></li>
+            <li>
+              <p>习近平参观曼彻斯特城市足球学院4</p>
+              <a href="article.html" target="_blank"><img src="upload/pic3.jpg" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--------content 焦点图e--------> 
+    </div>
+    <div class="part1_r fr">
+      <div id="edu_news">
+        <div class="edu_news_title">
+          <h3>教育新闻</h3>
+          <span><a href="news.html" class="more">更多</a></span></div>
+        <div class="edu_news_content">
+          <h4><a href="article.html">市关工委在太师附小检查指导工作</a></h4>
+          <p>11月27日，晋中市关工委主任张鼎仁、太谷县关工委主任王江峰等一行6人莅临太谷师范附小检查指导工作。太谷师范附小关工委主任丁继光、校长王全福详细向领导们汇报了附小关工委近年来...<a href="article.html" class="readmore">[全文]</a></p>
+          <ul class="fl">
+            <li><span>[教育动态]</span><a href="article.html">魅力校园 精彩无限</a></li>
+            <li><span>[教育动态]</span><a href="article.html">晋中市书法联片教研活动在我县举行</a></li>
+            <li><span>[教育动态]</span><a href="article.html">县人大常委会开展《教师法》执法检查</a></li>
+            <li><span>[教育动态]</span><a href="article.html">敦坊小学展新颜</a></li>
+          </ul>
+          <ul class="fr">
+            <li><span>[教育动态]</span><a href="article.html">魅力校园 精彩无限</a></li>
+            <li><span>[教育动态]</span><a href="article.html">晋中市书法联片教研活动在我县举行</a></li>
+            <li><span>[教育动态]</span><a href="article.html">县人大常委会开展《教师法》执法检查</a></li>
+            <li><span>[教育动态]</span><a href="article.html">敦坊小学展新颜</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------part1 e--------> 
+  
+  <!--------part2 s-------->
+  
+  <div id="part2">
+    <div class="part2_1 fl">
+      <div class="part2_1_title">
+        <h3>快捷导航</h3>
+      </div>
+      <ul class="part2_1_content">
+        <li><a href="#"><img src="images/quick1.jpg" width="105" height="80"  alt=""/></a></li>
+        <li class="left10"><a href="#"><img src="images/quick2.jpg" width="105" height="80"  alt=""/></a></li>
+        <li class="left10"><a href="#"><img src="images/quick3.jpg" width="105" height="80"  alt=""/></a></li>
+        <li class="left10"><a href="#"><img src="images/quick4.jpg" width="105" height="80"  alt=""/></a></li>
+      </ul>
+    </div>
+    <div class="part2_2 fl left20">
+      <div class="part2_2_title">
+        <h3>专题栏目</h3>
+        <span><a href="zhuanti_list2.html" class="more">更多</a></span> </div>
+      <div class="part2_2_content">
+        <div id="slideBox" class="slideBox2">
+          <div class="bd">
+            <ul>
+              <li><a href="zhuanti.html" target="_blank"><img src="upload/zt01.jpg" /></a></li>
+              <li><a href="zhuanti.html" target="_blank"><img src="upload/zt02.jpg" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part2_3 fl left20">
+      <div class="part2_2_title">
+        <h3>通知公告</h3>
+        <span><a href="xxgk.html" class="more">更多</a></span> </div 
+      >
+      <div class="txtScroll-top">
+        <div class="bd">
+          <ul class="infoList part2_3_content">
+            <li><a href="article2.html" target="_blank">中国打破了世界软件巨头规则</a></li>
+            <li><a href="article2.html" target="_blank">口语：会说中文就能说英语！</a></li>
+            <li><a href="article2.html" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+            <li><a href="article2.html" target="_blank">数理化老师竟也看学习资料？</a></li>
+            <li><a href="article2.html" target="_blank">学英语送ipad2,45天突破听说</a></li>
+            <li><a href="article2.html" target="_blank">学外语，上北外！</a></li>
+            <li><a href="article2.html" target="_blank">那些无法理解的荒唐事</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--------part2 e--------> 
+  <!--------part3 s-------->
+  <div id="part3">
+    <div class="part3_1 fl">
+      <div class="part3_1_title">
+        <h3>机构设置</h3>
+      </div>
+      <div class="part3_1_content">
+        <div class="jzzc">
+          <div class="jzzc_l"> <img src="images/jvzhang.jpg" width="108" height="112"  alt=""/> </div>
+          <div class="jzzc_r">
+            <div class="jzzc_r_title">局长:闻武斌</div>
+            <p>欢迎您访问太谷教育信息网，感谢您对太谷县教育工作的关心、关注和支持。2015年全县教育工作的总体要求，即，全面落实立德树人，全面深化教育综合改革，全面推进依法治教，全面加强教育系统党风廉政建设...</p>
+          </div>
+        </div>
+        <div class="jgsz_nav">
+        <a href="zixun.html" class="nav1"></a>
+        <a href="leader_gs.html" class="nav2"></a>
+        <a href="leader.html" class="nav3"></a>
+        </div>
+      </div>
+    </div>
+    <div class="part3_2 fl left20">
+      <div class="part3_2_title">
+        <h3>股室动态</h3>
+        <span><a href="xxgk_gs.html" class="more">股室指南</a></span> </div>
+      <ul class="part3_2_content">
+        <li><span>[基教股]</span><a href="article.html">太谷县教育局关于规范中小学生用书与收费的通</a></li>
+        <li><span>[基教股]</span><a href="article.html">2015年新生划拨公示通知</a></li>
+        <li><span>[基教股]</span><a href="article.html">2015年义务教育阶段招生工作日程表</a></li>
+        <li><span>[计财股]</span><a href="article.html">关于普通高等学校家庭经济困难新入学资助项目</a></li>
+        <li><span>[计财股]</span><a href="article.html">国家学生资助政策体系内容</a></li>
+        <li><span>[现代教育信息中心]</span><a href="article.html">晋中市教育局关于加强录播教室教学</a></li>
+      </ul>
+    </div>
+    <div class="part3_3 fl left20">
+      <div class="part3_2_title">
+        <h3>办事指南</h3>
+        <span><a href="bszn.html" class="more">更多</a></span> </div>
+      <ul class="part3_2_content">
+        <li><span>[业务事项]</span><a href="article.html">太谷县教育局关于规范中小学生用书与收费的</a></li>
+        <li><span>[业务事项]</span><a href="article.html">2015年新生划拨公示通知</a></li>
+        <li><span>[办事流程]</span><a href="article.html">2015年义务教育阶段招生工作日程表</a></li>
+        <li><span>[办事流程]</span><a href="article.html">关于普通高等学校家庭经济困难新入学资助项</a></li>
+        <li><span>[表格下载]</span><a href="article.html">国家学生资助政策体系内容</a></li>
+        <li><span>[表格下载]</span><a href="article.html">晋中市教育局关于加强录播教室教学</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--------part3 e--------> 
+  <!--------part4 s-------->
+  <div id="part4"> 
+    
+    <!--学校专栏-->
+    <div class="part4_1 fl">
+      <div class="part4_1_title">
+        <h3>学校专栏</h3>
+        <span class="more2">81</span> </div>
+      <div class="part4_1_cnt"> 
+        <!--学校专栏内容 S-->
+        <div class="part4_school_cnt" id="part4_school_cnt"> 
+          <!--学校1 s-->
+          <div class="part4_school_block"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学1</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校1 e--> 
+          
+           <!--学校2 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学2</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校2 e--> 
+          
+           <!--学校3 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学3</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校3 e--> 
+          
+           <!--学校4 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学4</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校4 e--> 
+          
+          <!--学校5 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学5</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校5 e-->
+          
+          <!--学校6 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学6</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校6 e-->
+          
+          <!--学校7 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学7</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校7 e-->
+          
+          <!--学校8 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学8</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校8 e-->
+          
+          <!--学校9 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学9</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校9 e-->
+          
+          <!--学校10 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学10</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校10 e-->
+          
+          <!--学校11 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学11</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校11 e-->
+          
+          <!--学校12 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学12</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校12 e-->
+          
+          <!--学校13 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学13</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校13 e-->
+          
+          <!--学校14 s-->
+          <div class="part4_school_block" style="display:none;"> <img src="upload/school.jpg" width="200" height="130"  alt=""/>
+            <div class="school_info"> <a href="article_school.html" class="school_title">太谷实验中学14</a>
+              <p>太谷县实验中学位于太谷县城北面，占地面积53000m2，建筑面积14470余m2，毗邻108国道和胡村工业园区。学校为12轨县直初中，设有36个教学班，学生1700余人，服务胡村镇...<span><a href="article_school.html">[详情]</a></span></p>
+              <a href="school.html" class="school_more fr">学校列表</a> </div>
+          </div>
+          <!--学校14 e-->
+        </div>
+        <!--学校专栏内容 e--> 
+        <!--学校专栏导航 S-->
+        <ul class="part4_school_nav" id="part4_school_nav">
+          <li class="cur"><a href="javascript:void(0)">县直中小学</a></li>
+          <li><a href="javascript:void(0)">乡镇中学</a></li>
+          <li><a href="javascript:void(0)">子弟校</a></li>
+          <li><a href="javascript:void(0)">幼儿园</a></li>
+          <li><a href="javascript:void(0)">民办学校</a></li>
+          <li><a href="javascript:void(0)">明星镇学校</a></li>
+          <li><a href="javascript:void(0)">胡村镇学校</a></li>
+          <li><a href="javascript:void(0)">水秀乡学校</a></li>
+          <li><a href="javascript:void(0)">北汪乡学校</a></li>
+          <li><a href="javascript:void(0)">侯城乡学校</a></li>
+          <li><a href="javascript:void(0)">阳邑乡学校</a></li>
+          <li><a href="javascript:void(0)">小白乡学校</a></li>
+          <li><a href="javascript:void(0)">任村乡学校</a></li>
+          <li><a href="javascript:void(0)">范村镇学校</a></li>
+        </ul>
+        <!--学校专栏导航 E--> 
+        
+      </div>
+    </div>
+    <!--互动交流-->
+    <div class="part4_2 fr">
+      <div class="part4_2_title">
+        <h3>互动交流</h3>
+        <span><a href="hudong.html" class="more">更多</a></span> </div>
+      <div class="part4_2_cnt">
+        <div class="tel"></div>
+        <div class="hd_nav">
+        <a href="zixun.html" class="part4_2_nav">互动交流</a>
+        <a href="zixun.html" class="part4_2_nav margin10">调查征集</a>
+        <a href="zixun.html" class="part4_2_nav margin10">投诉信访</a>
+        <div class="cl"></div>
+        </div>
+        <ul class="part4_2_content">
+            <li><a href="article_zixun.html" target="_blank">太谷县教育局关于规范中小学生用书与收费的</a></li>
+            <li><a href="article_zixun.html" target="_blank">2015年新生划拨公示通知</a></li>
+            <li><a href="article_zixun.html" target="_blank">2015年义务教育阶段招生工作日程表</a></li>
+            <li><a href="article_zixun.html" target="_blank">关于普通高等学校家庭经济困难新入学资助项</a></li>
+          </ul>
+         </div>
+    </div>
+  </div>
+  <!--------part4 e--------> 
+  <!--------part5 s-------->
+  <div id="part5">
+  <div class="part5_1 fl">
+   <div class="part5_1_title">
+        <h3>教育资源</h3>
+        <span><a href="jyzy.html" class="more">更多</a></span> </div>
+        <ul class="jyzy">
+        <li><a href="jyzy.html"><div class="jyzy_img"><img src="images/jyzy01.jpg" width="170" height="120"  alt=""/></div>
+        <span class="jyzy_title1">本地课件资源</span>
+        </a></li>
+                <li><a href="jyzy.html"><div class="jyzy_img"><img src="images/jyzy02.jpg" width="170" height="120"  alt=""/></div>
+        <span class="jyzy_title2">导学案</span>
+        </a></li>
+                <li><a href="jyzy.html"><div class="jyzy_img"><img src="images/jyzy03.jpg" width="170" height="120"  alt=""/></div>
+        <span class="jyzy_title3">视频资源</span>
+        </a></li>
+                <li><a href="jyzy.html"><div class="jyzy_img"><img src="images/jyzy04.jpg" width="170" height="120"  alt=""/></div>
+        <span class="jyzy_title4">远教资源</span>
+        </a></li>
+        </ul>
+  </div>
+  <div class="part5_2 fr">
+  <div class="part5_2_title">
+        <h3>特色教育</h3></div>
+        <ul class="part5_2_cnt">
+        <li class="tgys"><a href="tgyg.html" ></a></li>
+        <li class="csxyq"><a href="http://www.tgerzhong.com.cn/xingyi/index.asp" target="_blank" ></a></li>
+        </ul>
+  </div>
+  </div>
+  <!--------part5 e-------->
+  <!--------part6 友情链接s-------->
+  <div id="part6">
+    <div class="part6_title">
+      <h3>友情链接</h3>
+    </div>
+    <div class="part6_cnt">
+      <select id="Select1" class="select" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <option>下属学校</option>
+        <option value="#">学校1</option>
+        <option value="#">学校2</option>
+        <option value="#">学校3</option>
+      </select>
+      <select id="Select1" class="select" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <option>平级单位</option>
+        <option value="#">平级单位1</option>
+        <option value="#">平级单位2</option>
+        <option value="#">平级单位3</option>
+      </select>
+      <select id="Select1" class="select" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <option>县级单位</option>
+        <option value="#">县级单位1</option>
+        <option value="#">县级单位2</option>
+        <option value="#">县级单位3</option>
+      </select>
+      <select id="Select1" class="select" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <option>省市级单位</option>
+        <option value="#">省市级单位1</option>
+        <option value="#">省市级单位2</option>
+        <option value="#">省市级单位3</option>
+      </select>
+      <select id="Select1" class="select" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+        <option>国家级单位</option>
+        <option value="#">国家级单位1</option>
+        <option value="#">国家级单位2</option>
+        <option value="#">国家级单位3</option>
+      </select>
+    </div>
+  </div>
+  <!--------part6 友情链接e--------> 
+</div>
+<!--------content e-------->
+<!--底部 S-->
+<div id="footer">
+    <div class="footer1">
+        <div class="footer">
+            <div class="footer1_l">
+                <p>太谷教育信息网</p>
+                <span>邮编：030800</span>
+                <span>地址：山西省晋中市太谷县</span>
+                <span>Email：tgxjyxx@163.com</span>
+            </div>
+            <div class="footer1_r">
+                <img src="images/footer_img.png" width="56" height="68" alt=""/>
+                <p class="footer_menu">
+                    <a href="xxgk.html">信息公开</a><span>|</span>
+                    <a href="news.html">教育新闻</a><span>|</span>
+                    <a href="bszn.html">办事指南</a><span>|</span>
+                    <a href="hudong.html">互动交流</a><span>|</span>
+                    <a href="jyzy.html">教育资源</a><span>|</span>
+                    <a href="http://wljy.jzedu.net/index.do">网络教研</a><span>|</span>
+                    <a href="school.html">学校专栏</a>
+                </p>
+                <div class="cl"></div>
+                <div class="design">Design：<a href="http://www.sxzyrj.com/">山西智云软件</a>版权所有：太谷教育信息网</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer">
+            <span>Copyright © 2015 WWW.SXTGEDU.NET</span>
+            <p>非经营性互联网信息服务审批号 <a href="#">(晋)ICP备07000139号</a></p>
+        </div>
+    </div>
+<div id=ad1>
+	<a href="#" target="_blank" class="ad">
+    	<img src="images/banner1.jpg">
+    </a>
+    <a href="#" class="ad_close">关闭</a>
+</div>
+
+</div>
+<!--底部 E-->
+<script id="jsID" type="text/javascript">
+      var ad1=new AdMove("ad1");
+      ad1.Run();
+			//菜单JS
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+			
+			//焦点图js
+			jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true}); //焦点图js
+			jQuery(".slideBox2").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true,delayTime:1000,interTime:8000});//专题栏目js
+			jQuery(".txtScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:3,easing:"easeInQuint",pnLoop:false,mouseOverStop:false});//通知公告
+		</script>
+</body>
+</html>

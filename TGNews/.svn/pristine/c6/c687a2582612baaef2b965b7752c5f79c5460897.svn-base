@@ -1,0 +1,21 @@
+package cn.bdqn.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import cn.bdqn.dao.NewsssDao;
+import cn.bdqn.pojo.Columnn;
+import cn.bdqn.service.NewsssService;
+@Service("newsssService")
+public class NewsssServiceImpl implements NewsssService {
+	@Resource(name="newsssDao")
+	private NewsssDao newsssDao;
+	public List<Columnn> getAll() {
+		// TODO Auto-generated method stub
+		return newsssDao.getAll();
+	}
+
+}

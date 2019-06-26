@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.CharacteristicDao">
+<<<<<<< .mine
+	 <select id="getAll" resultType="cn.bdqn.pojo.Characteristic">
+||||||| .r91
+	<!-- <select id="getAll" resultType="cn.bdqn.pojo.Characteristic">
+=======
+	<select id="getAll" resultType="cn.bdqn.pojo.Characteristic">
+>>>>>>> .r120
+		select * from ein_characteristic
+	</select>
+	<delete id="del">
+		DELETE FROM ein_characteristic WHERE id = #{id}
+	</delete>
+	
+	<insert id="add" parameterType="cn.bdqn.pojo.Characteristic">
+		INSERT INTO ein_characteristic VALUES(null,#{repertoire},#{videoAddress},1,NOW(),null,null)
+	</insert>
+
+	<select id="getById" resultType="cn.bdqn.pojo.Characteristic">
+		select * from ein_characteristic
+		<trim prefix="where" prefixOverrides="and">
+				<if test="id != 0">
+					and id = #{id}
+				</if>
+		 </trim>
+	</select>
+
+	<update id="upd" parameterType="cn.bdqn.pojo.Characteristic">
+		update ein_characteristic
+		<trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+			<if test="id != 0">id=#{id},</if>
+			<if test="repertoire != null">repertoire=#{repertoire},</if>
+			<if test="videoAddress != null">videoAddress=#{videoAddress},</if>
+		</trim>
+<<<<<<< .mine
+	</update>  
+||||||| .r91
+	</update>  -->
+=======
+	</update>
+>>>>>>> .r120
+</mapper>
